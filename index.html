@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Picot - Développeur Web Freelance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; color: #333; }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; color: #a0aec0; margin-bottom: 20px; }
+        .btn {
+            background: #e94560;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn:hover { background: #c73652; }
+
+        /* SERVICES */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+            background: #f8f9fa;
+        }
+        .services h2 { font-size: 2em; margin-bottom: 40px; }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .card .icon { font-size: 2.5em; margin-bottom: 15px; }
+        .card h3 { margin-bottom: 10px; color: #1a1a2e; }
+        .card p { color: #666; font-size: 0.9em; }
+        .card .price {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #e94560;
+            font-size: 1.1em;
+        }
+
+        /* PROJETS */
+        .projets {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .projets h2 { font-size: 2em; margin-bottom: 40px; }
+        .projet-card {
+            background: #1a1a2e;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .projet-card h3 { margin-bottom: 10px; color: #e94560; }
+        .tags { margin-top: 15px; }
+        .tag {
+            background: #e94560;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            margin: 3px;
+            display: inline-block;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #1a1a2e;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .contact h2 { font-size: 2em; margin-bottom: 15px; }
+        .contact p { color: #a0aec0; margin-bottom: 25px; }
+        .contact a { color: #e94560; text-decoration: none; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>👋 Quentin Picot</h1>
+        <p>Développeur Web Freelance · Bordeaux</p>
+        <p style="font-size:0.95em; margin-bottom:25px; color:#718096;">
+            Sites vitrines · Landing pages · WordPress · HTML/CSS
+        </p>
+        <a href="#contact" class="btn">Me contacter</a>
+    </header>
+
+    <section class="services">
+        <h2>Mes services</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Site vitrine</h3>
+                <p>Site professionnel pour votre activité, responsive et moderne</p>
+                <div class="price">À partir de 80€</div>
+            </div>
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Landing page</h3>
+                <p>Page de vente percutante pour booster vos conversions</p>
+                <div class="price">À partir de 50€</div>
+            </div>
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Site WordPress</h3>
+                <p>Installation, configuration et personnalisation complète</p>
+                <div class="price">À partir de 100€</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projets">
+        <h2>Projet réalisé</h2>
+        <div class="projet-card">
+            <h3>Blog de voyage</h3>
+            <p>Conception et développement complet d'un blog de voyage incluant gestion de contenu, base de données et design responsive.</p>
+            <div class="tags">
+                <span class="tag">Svelte</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Directus</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Travaillons ensemble !</h2>
+        <p>Vous avez un projet ? Je suis disponible et réactif.</p>
+        <a href="https://comeup.com" target="_blank">✉️ Me contacter sur ComeUp</a>
+    </section>
+
+</body>
+</html>
